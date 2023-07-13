@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import "./InterviewCard.css";
 import axios from "axios";
 import { useGetUserID } from "../hooks/useGetUserID";
+import { useNavigate } from "react-router-dom";
 
 const InterviewCard = ({ companyName, role, difficulty, offer, process, rounds, _id, isSaved, showSavedRecipeButton }) => {
   const [hover, setHover] = useState(false);
@@ -10,11 +11,15 @@ const InterviewCard = ({ companyName, role, difficulty, offer, process, rounds, 
 
   const userID = useGetUserID();
 
+  const navigate = useNavigate();
+
   // setSaved(userID.savedInterviews?.include(_id))
 
   useEffect(()=>{
     setSaved(isSaved);
   },[isSaved])
+
+  
 
   
   const handleSave = async() => {
@@ -40,8 +45,10 @@ const InterviewCard = ({ companyName, role, difficulty, offer, process, rounds, 
         userID
         }
       });
+      console.log(response);
       alert("Interview deleted.");
-      window.location.reload();
+      // window.location.reload();
+      navigate('/');
     } catch (error) {
       console.error(error)
     }
