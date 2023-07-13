@@ -1,0 +1,47 @@
+.interview-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    transition: 0.5s;
+    height: auto;
+    font-size: 30px;
+  }
+
+  /* .interview-card:hover{
+    background-color: rgb(219, 229, 112);
+    color: rgb(0, 0, 0);
+    border-color: rgb(255, 255, 254);
+  } */
+
+  .interview-card:hover {
+    background-color: #eaeaea;
+    color: #000000;
+    border-color: #ffffff;
+  }
+  
+  
+  
+  
+  .company-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: auto 0;
+  }
+  
+  .difficulty {
+    margin-bottom: 4px;
+  }
+  
+  .offer {
+    margin-bottom: 4px;
+  }
+  
+  .process {
+    margin-bottom: 4px;
+  }
+  
+  .rounds {
+    margin-bottom: 0;
+  }
+  

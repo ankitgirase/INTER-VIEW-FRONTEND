@@ -1,0 +1,60 @@
+/* Responsive container */
+.create-interview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+  margin-bottom: 20px;
+}
+
+/* Heading style */
+.create-interview h2 {
+  margin-top: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+}
+
+/* Form styles */
+.create-interview form {
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px; */
+}
+
+/* Label styles */
+.create-interview label {
+  font-weight: bold;
+}
+
+/* Input and textarea styles */
+.create-interview input,
+.create-interview textarea {
+  width: 100%;
+  max-width: 500px; /* Add max-width to limit the width */
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+/* Submit button styles */
+.create-interview button {
+  background-color: #243f5b;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 400px; /* Add max-width to limit the width */
+  margin-left: 3%;
+}
+
+.create-interview button:hover {
+  background-color: #0056b3;
+}
+

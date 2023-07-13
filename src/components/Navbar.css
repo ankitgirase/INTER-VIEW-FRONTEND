@@ -1,0 +1,61 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #283948;
+    padding: 10px;
+    margin-right: 20px;
+    /* position: sticky; */
+    /* overflow: hidden; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    border: solid 1px white;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+  }
+  
+  /* Hover effect */
+  .navbar a:hover {
+    color: gold;
+  }
+  
+  /* Logout button */
+  .navbar button {
+    /* background-color: transparent;
+    color: gold;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; */
+    background-color: transparent;
+    color: gold;
+    text-decoration: none;
+    margin-right: 10px;
+    border: solid 1px white;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+  }
+  
+  .navbar button:hover {
+    /* color: white;
+    border: solid gold 1px;
+    border-radius: 3px; */
+    border: solid 1px gold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+  .logoName{
+    align-self: center;
+  }
