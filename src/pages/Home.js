@@ -14,7 +14,7 @@ const Home = () => {
 
     const fetch = async () =>{
         try {
-          const response = await axios.get("http://localhost:3001/interviews");
+          const response = await axios.get("https://inter-viewbackend.onrender.com/interviews");
           setInterviews(response.data)
         } catch (error) {
           console.error(error)
@@ -24,7 +24,7 @@ const Home = () => {
     fetch();
     const fetchSavedInterviews = async () =>{
       try {
-        const response = await axios.get(`http://localhost:3001/interviews/savedInterviews/ids/${userID}`);
+        const response = await axios.get(`https://inter-viewbackend.onrender.com/interviews/savedInterviews/ids/${userID}`);
         console.log(response.data);
         setSavedInterviews(response.data.savedInterviews)
       } catch (error) {

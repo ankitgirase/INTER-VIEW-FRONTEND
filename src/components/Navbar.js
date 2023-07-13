@@ -26,8 +26,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar">
-      <span className="logoName">INTER-VIEW</span>
+    <div className="navbar">  
       <Link
         to="/"
         onMouseEnter={() => setHover(true)}

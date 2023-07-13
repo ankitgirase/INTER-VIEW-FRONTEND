@@ -35,7 +35,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:3001/auth/login", {
+      const response = await axios.post("https://inter-viewbackend.onrender.com/auth/login", {
         username,
         password,
       });
@@ -69,7 +69,7 @@ const Register = () => {
 
     try {
       console.log("submit");
-      await axios.post("http://localhost:3001/auth/register", {
+      await axios.post("https://inter-viewbackend.onrender.com/auth/register", {
         username,
         password,
       });

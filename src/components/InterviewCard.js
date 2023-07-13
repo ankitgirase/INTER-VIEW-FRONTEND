@@ -20,7 +20,7 @@ const InterviewCard = ({ companyName, role, difficulty, offer, process, rounds, 
   const handleSave = async() => {
     if(saved) return alert(`${companyName} is already saved`)
     try {
-      const response = await axios.put("http://localhost:3001/interviews",{
+      const response = await axios.put("https://inter-viewbackend.onrender.com/interviews",{
         userID,
         interviewID: _id
       });
@@ -34,7 +34,7 @@ const InterviewCard = ({ companyName, role, difficulty, offer, process, rounds, 
   
   const handleRemove = async() => {
     try {
-      const response = await axios.delete("http://localhost:3001/interviews",{
+      const response = await axios.delete("https://inter-viewbackend.onrender.com/interviews",{
         data:{
         interviewID: _id,
         userID

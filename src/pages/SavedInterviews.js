@@ -13,7 +13,7 @@ const SavedInterviews = () => {
     const fetchSavedInterviews = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3001/interviews/savedInterviews/${userID}`
+          `https://inter-viewbackend.onrender.com/interviews/savedInterviews/${userID}`
         );
         console.log(response.data.savedInterviews);
         setSavedInterviews(response.data.savedInterviews);

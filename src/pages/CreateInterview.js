@@ -29,7 +29,7 @@ const CreateInterview = () => {
         e.preventDefault();
         // console.log(interview)
         try {
-          await axios.post("http://localhost:3001/interviews", interview);
+          await axios.post("https://inter-viewbackend.onrender.com/interviews", interview);
           // console.log(int);
           alert("Interview added successfully");
           navigate('/')
