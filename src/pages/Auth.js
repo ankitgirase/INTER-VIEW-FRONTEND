@@ -39,6 +39,9 @@ const Login = () => {
         username,
         password,
       });
+
+      if(response.data.message === 'user not registered !' ) return alert("user not registered");
+      if(response.data.message === ' usename or password is incorrect !') return alert(' usename or password is incorrect !');
       console.log(response);
       setCookies("access_token", response.data.token);
       window.localStorage.setItem("userID", response.data.userID);
@@ -69,10 +72,12 @@ const Register = () => {
 
     try {
       console.log("submit");
-      await axios.post("https://inter-viewbackend.onrender.com/auth/register", {
+      const response =  await axios.post("https://inter-viewbackend.onrender.com/auth/register", {
         username,
         password,
       });
+      if(response.data.message === 'User already exists!!') return alert("User already exists!!");
+      console.log(response);
       alert("registered successfully");
     } catch (error) {
       console.error(error);
